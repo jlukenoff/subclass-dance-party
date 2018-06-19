@@ -16,6 +16,7 @@ Dancer.prototype.step = function() {
 
 //should set intital position of element on DOM
 Dancer.prototype.setPosition = function(top, left) {
+  // debugger;
   var styleSettings = {
     top: top,
     left: left
