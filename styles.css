@@ -1,3 +1,7 @@
+* {
+  margin: none;
+  padding: none;
+}
 body, html{
   height:100%;
 }
@@ -10,7 +14,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -27,7 +31,20 @@ body, a:link, a:visited, a:active{
   position: relative;
 }
 
-.sillyDancer{
+.LuigiDancer{
   position: relative;
   height: 20%;
+  border: none;
 }
+
+.MarioDancer{
+  position: relative;
+  height: 20%;
+  border: none;
+}
+
+.PumpDancer {
+  border: none;
+  position: relative;
+}
+

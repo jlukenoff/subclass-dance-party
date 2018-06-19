@@ -18,10 +18,14 @@ Dancer.prototype.step = function() {
 Dancer.prototype.setPosition = function(top, left) {
   // debugger;
   var styleSettings = {
-    top: top,
-    left: left
+    top: top/*(top / 10).toString() + '%'*/,
+    left: left / 10/*(left / 10).toString() + '%'*/
   };
   this.$node.css(styleSettings);
 };
+
+Dancer.prototype.lineUp = function() {
+  this.$node.css({display: inline});
+}
 
 
