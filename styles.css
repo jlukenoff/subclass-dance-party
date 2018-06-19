@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background:url(./img/dancefloor.jpg) no-repeat center center fixed;
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -28,4 +29,5 @@ body, a:link, a:visited, a:active{
 
 .sillyDancer{
   position: relative;
+  height: 20%;
 }
