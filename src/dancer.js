@@ -1,31 +1,26 @@
-// Creates and returns a new dancer object that can step
 var Dancer = function(top, left, timeBetweenSteps) {
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
   this.$node = $('<span class="dancer"></span>');
+  this.step();
   this.setPosition(top, left);
-  this.step(); 
+  
 };
 
-// should move element left and right and call itself on every.. 
-// ...timeBetweenSteps milliseconds
 Dancer.prototype.step = function() {
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
-//should set intital position of element on DOM
 Dancer.prototype.setPosition = function(top, left) {
-  // debugger;
+
   var styleSettings = {
-    top: top/*(top / 10).toString() + '%'*/,
-    left: left / 10/*(left / 10).toString() + '%'*/
+    top: top,
+    left: left / 10
   };
   this.$node.css(styleSettings);
 };
 
 Dancer.prototype.lineUp = function() {
-  this.$node.css({display: inline});
+  this.$node.css({display: inline, position: 'absolute'});
 }
-
-
